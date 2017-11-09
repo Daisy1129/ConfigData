@@ -4,4 +4,4 @@ eureka:
       defaultZone: http://localhost:8010/eureka/
 spring:
   profiles: noun
-    words: apple,book,rice,food,mobile      
+words: apple,book,rice,food,mobile
