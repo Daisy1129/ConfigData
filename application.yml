@@ -10,4 +10,4 @@ words: apple,book,rice,food,mobile
 ---
 spring:
   profiles: lab-42-article
-words: a, the
+words: a,the
