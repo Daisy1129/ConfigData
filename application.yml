@@ -3,5 +3,5 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
 spring:
-  profiles: noun
+  profiles: lab-42-noun
 words: apple,book,rice,food,mobile
