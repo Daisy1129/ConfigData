@@ -1,3 +1,4 @@
+
 ---
 eureka:
   client:
@@ -14,3 +15,29 @@ words: apple,book,rice,food,mobile
 spring:
   profiles: lab-42-article
 words: a,the
+
+---
+spring:
+  profiles: subject
+words: I,You,He,She,It
+
+---
+spring:
+  profiles: verb
+words: run,eat,sit,look,give
+
+---
+spring:
+  profiles: article
+words: a,the
+
+---
+spring:
+  profiles: adjective
+words: good,nice,happy,rich
+
+
+---
+spring:
+  profiles: noun
+words: book,apple,paper,rice
