@@ -41,3 +41,9 @@ words: good,nice,happy,rich
 spring:
   profiles: noun
 words: book,apple,paper,rice
+---
+spring:
+  profiles: lab-7-client
+---
+spring:
+  profiles: lab-7-consumer
