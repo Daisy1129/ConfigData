@@ -1,4 +1,5 @@
 
+
 ---
 eureka:
   client:
@@ -47,3 +48,6 @@ spring:
 ---
 spring:
   profiles: lab-7-feign-consumer
+---
+spring:
+  profiles: lab-7-ribbon-consumer
