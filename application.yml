@@ -46,4 +46,4 @@ spring:
   profiles: lab-7-client
 ---
 spring:
-  profiles: lab-7-consumer
+  profiles: lab-7-feign-consumer
