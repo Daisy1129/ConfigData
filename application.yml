@@ -1,5 +1,3 @@
-
-
 ---
 eureka:
   client:
@@ -37,7 +35,6 @@ spring:
   profiles: adjective
 words: good,nice,happy,rich
 
-
 ---
 spring:
   profiles: noun
@@ -45,6 +42,7 @@ words: book,apple,paper,rice
 ---
 spring:
   profiles: lab-7-client
+someones: daisy,lily,lucy,neo    
 ---
 spring:
   profiles: lab-7-feign-consumer
