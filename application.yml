@@ -49,3 +49,6 @@ spring:
 ---
 spring:
   profiles: lab-7-ribbon-consumer
+---
+spring:
+  profiles: lab-72-ribbon-consumer
