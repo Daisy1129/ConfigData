@@ -41,6 +41,9 @@ spring:
 words: book,apple,paper,rice
 ---
 spring:
+  profiles: lab-52-ribbon-consumer
+---
+spring:
   profiles: lab-7-client
 someones: daisy,lily,lucy,neo    
 ---
