@@ -1,4 +1,4 @@
-  ---
+---
 eureka:
   client:
     serviceUrl:
@@ -16,7 +16,6 @@ words: ran,knew,had,saw,bought
 spring:
   profiles: lab-42-noun
 words: boat,book,vote,seat,backpack,partition,groundhog
-
 ---
 spring:
   profiles: lab-42-article
