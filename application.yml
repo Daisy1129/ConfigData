@@ -3,9 +3,9 @@ eureka:
   client:
     serviceUrl:
 #for single Eureka server:
-#      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://localhost:8010/eureka/
 # for multi Eureka server: 
-      defaultZone: http://eureka-primary:8011/eureka/,http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/
+#      defaultZone: http://eureka-primary:8011/eureka/,http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/
 ---
 spring:
   profiles: lab-42-subject
