@@ -31,6 +31,7 @@ spring:
   profiles: lab-7-client
 someones: daisy,lily,lucy,neo
 ---
+# for multi Eureka server:
 spring:
   profiles: primary
 eureka:
@@ -42,3 +43,29 @@ eureka:
     serviceUrl:
 #需要设置注册地址 defaultZone 的值为另外两个Eureka server     
       defaultZone: http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/      
+---
+# for multi Eureka server:
+spring:
+  profiles: secondary
+eureka:
+  instance:
+    hostname: eureka-secondary
+  client:  
+    registerWithEureka: false
+    fetchRegistry: false  
+    serviceUrl:
+#需要设置注册地址 defaultZone 的值为另外两个Eureka server       
+      defaultZone: http://eureka-primary:8011/eureka/,http://eureka-tertiary:8013/eureka/ 
+---
+# for multi Eureka server:
+spring:
+  profiles:tertiary
+eureka:
+  instance:
+    hostname: eureka-tertiary
+  client:
+    registerWithEureka: false
+    fetchRegistry: false    
+    serviceUrl:
+#需要设置注册地址 defaultZone 的值为另外两个Eureka server       
+      defaultZone: http://eureka-primary:8011/eureka/,http://eureka-secondary:8012/eureka/  
