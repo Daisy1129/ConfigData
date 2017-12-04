@@ -30,3 +30,15 @@ words: boat,book,vote,seat,backpack,partition,groundhog
 spring:
   profiles: lab-7-client
 someones: daisy,lily,lucy,neo
+---
+spring:
+  profiles: primary
+eureka:
+  instance:
+    hostname: eureka-primary
+  client: 
+    registerWithEureka: false
+    fetchRegistry: false           
+    serviceUrl:
+#需要设置注册地址 defaultZone 的值为另外两个Eureka server     
+      defaultZone: http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/      
