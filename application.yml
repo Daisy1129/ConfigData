@@ -59,7 +59,7 @@ eureka:
 ---
 # for multi Eureka server:
 spring:
-  profiles:tertiary
+  profiles: tertiary
 eureka:
   instance:
     hostname: eureka-tertiary
@@ -69,3 +69,6 @@ eureka:
     serviceUrl:
 #需要设置注册地址 defaultZone 的值为另外两个Eureka server       
       defaultZone: http://eureka-primary:8011/eureka/,http://eureka-secondary:8012/eureka/  
+---
+spring:
+  profiles: single-eureka-server
