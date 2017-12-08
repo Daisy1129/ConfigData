@@ -80,6 +80,3 @@ eureka:
 ---
 spring:
   profiles: single-eureka-server
----
-spring:
-  profiles: turbine
