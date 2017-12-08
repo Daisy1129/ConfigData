@@ -28,6 +28,14 @@ spring:
 words: boat,book,vote,seat,backpack,partition,groundhog
 ---
 spring:
+  profiles: animal
+words: elephant,duck,monkey,bear
+---
+spring:
+  profiles: fruit
+words: apple,banana,cherry,nut
+---
+spring:
   profiles: lab-7-client
 someones: daisy,lily,lucy,neo
 ---
